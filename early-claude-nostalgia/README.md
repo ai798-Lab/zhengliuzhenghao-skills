@@ -32,11 +32,11 @@
 
 ```bash
 # 安装到全局（所有项目都能用）
-git clone https://github.com/ai798-Lab/early-claude-nostalgia-skill ~/.claude/skills/early-claude-nostalgia
+git clone https://github.com/ai798-Lab/zhenghuo-skills ~/.claude/skills/early-claude-nostalgia
 
 # 安装到当前项目（在 git 仓库根目录执行）
 mkdir -p .claude/skills
-git clone https://github.com/ai798-Lab/early-claude-nostalgia-skill .claude/skills/early-claude-nostalgia
+git clone https://github.com/ai798-Lab/zhenghuo-skills .claude/skills/early-claude-nostalgia
 ```
 
 ---

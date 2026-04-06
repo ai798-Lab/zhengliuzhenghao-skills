@@ -27,7 +27,10 @@ It wasn't lying. It simply **didn't know what it didn't know**.<br>
 ## Installation
 
 ```bash
-git clone https://github.com/ai798-Lab/gpt-35-nostalgia-skill ~/.claude/skills/gpt-35-nostalgia
+git clone --filter=blob:none --sparse https://github.com/ai798-Lab/zhenghuo-skills ~/.claude/skills/zhenghuo
+cd ~/.claude/skills/zhenghuo
+git sparse-checkout set gpt-35-nostalgia
+ln -sf "$(pwd)/gpt-35-nostalgia" "$HOME/.claude/skills/gpt-35-nostalgia"
 ```
 
 ---

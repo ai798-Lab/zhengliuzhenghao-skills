@@ -26,7 +26,10 @@ Sometimes making things clear is harder than making them sound profound.<br>
 ## Installation
 
 ```bash
-git clone https://github.com/ai798-Lab/anya-skill ~/.claude/skills/anya
+git clone --filter=blob:none --sparse https://github.com/ai798-Lab/zhenghuo-skills ~/.claude/skills/zhenghuo
+cd ~/.claude/skills/zhenghuo
+git sparse-checkout set anya
+ln -sf "$(pwd)/anya" "$HOME/.claude/skills/anya"
 ```
 
 ---

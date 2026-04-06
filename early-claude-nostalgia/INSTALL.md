@@ -8,14 +8,17 @@
 ## Install (Global — works in all projects)
 
 ```bash
-git clone https://github.com/ai798-Lab/early-claude-nostalgia-skill ~/.claude/skills/early-claude-nostalgia
+git clone --filter=blob:none --sparse https://github.com/ai798-Lab/zhenghuo-skills ~/.claude/skills/zhenghuo
+cd ~/.claude/skills/zhenghuo
+git sparse-checkout set early-claude-nostalgia
+ln -sf "$(pwd)/early-claude-nostalgia" "$HOME/.claude/skills/early-claude-nostalgia"
 ```
 
 ## Install (Per-project — run in git repo root)
 
 ```bash
 mkdir -p .claude/skills
-git clone https://github.com/ai798-Lab/early-claude-nostalgia-skill .claude/skills/early-claude-nostalgia
+git clone https://github.com/ai798-Lab/zhenghuo-skills .claude/skills/early-claude-nostalgia
 ```
 
 ## Verify Installation

@@ -26,7 +26,10 @@ Gintoki will give you that sentence. First he'll insult you. Then he'll say it. 
 ## Installation
 
 ```bash
-git clone https://github.com/ai798-Lab/gintoki-skill ~/.claude/skills/gintoki
+git clone --filter=blob:none --sparse https://github.com/ai798-Lab/zhenghuo-skills ~/.claude/skills/zhenghuo
+cd ~/.claude/skills/zhenghuo
+git sparse-checkout set gintoki
+ln -sf "$(pwd)/gintoki" "$HOME/.claude/skills/gintoki"
 ```
 
 ---

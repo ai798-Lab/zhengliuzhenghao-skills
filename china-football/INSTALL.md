@@ -8,14 +8,17 @@
 ## Install (Global — works in all projects)
 
 ```bash
-git clone https://github.com/ai798-Lab/china-football-skill ~/.claude/skills/china-football
+git clone --filter=blob:none --sparse https://github.com/ai798-Lab/zhenghuo-skills ~/.claude/skills/zhenghuo
+cd ~/.claude/skills/zhenghuo
+git sparse-checkout set china-football
+ln -sf "$(pwd)/china-football" "$HOME/.claude/skills/china-football"
 ```
 
 ## Install (Per-project — run in git repo root)
 
 ```bash
 mkdir -p .claude/skills
-git clone https://github.com/ai798-Lab/china-football-skill .claude/skills/china-football
+git clone https://github.com/ai798-Lab/zhenghuo-skills .claude/skills/china-football
 ```
 
 ## Verify Installation

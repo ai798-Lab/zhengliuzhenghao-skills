@@ -8,14 +8,17 @@
 ## Install (Global — works in all projects)
 
 ```bash
-git clone https://github.com/ai798-Lab/anya-skill ~/.claude/skills/anya
+git clone --filter=blob:none --sparse https://github.com/ai798-Lab/zhenghuo-skills ~/.claude/skills/zhenghuo
+cd ~/.claude/skills/zhenghuo
+git sparse-checkout set anya
+ln -sf "$(pwd)/anya" "$HOME/.claude/skills/anya"
 ```
 
 ## Install (Per-project — run in git repo root)
 
 ```bash
 mkdir -p .claude/skills
-git clone https://github.com/ai798-Lab/anya-skill .claude/skills/anya
+git clone https://github.com/ai798-Lab/zhenghuo-skills .claude/skills/anya
 ```
 
 ## Verify Installation

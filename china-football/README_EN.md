@@ -26,7 +26,10 @@ This isn't your fault — it's the Chinese Football DNA built into software deve
 ## Installation
 
 ```bash
-git clone https://github.com/ai798-Lab/china-football-skill ~/.claude/skills/china-football
+git clone --filter=blob:none --sparse https://github.com/ai798-Lab/zhenghuo-skills ~/.claude/skills/zhenghuo
+cd ~/.claude/skills/zhenghuo
+git sparse-checkout set china-football
+ln -sf "$(pwd)/china-football" "$HOME/.claude/skills/china-football"
 ```
 
 ---

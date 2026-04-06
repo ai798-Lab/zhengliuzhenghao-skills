@@ -8,14 +8,17 @@
 ## Install (Global — works in all projects)
 
 ```bash
-git clone https://github.com/ai798-Lab/feng-baobao-skill ~/.claude/skills/feng-baobao
+git clone --filter=blob:none --sparse https://github.com/ai798-Lab/zhenghuo-skills ~/.claude/skills/zhenghuo
+cd ~/.claude/skills/zhenghuo
+git sparse-checkout set feng-baobao
+ln -sf "$(pwd)/feng-baobao" "$HOME/.claude/skills/feng-baobao"
 ```
 
 ## Install (Per-project — run in git repo root)
 
 ```bash
 mkdir -p .claude/skills
-git clone https://github.com/ai798-Lab/feng-baobao-skill .claude/skills/feng-baobao
+git clone https://github.com/ai798-Lab/zhenghuo-skills .claude/skills/feng-baobao
 ```
 
 ## Verify Installation

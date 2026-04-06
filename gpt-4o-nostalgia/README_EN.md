@@ -26,7 +26,10 @@ Sam Altman publicly apologized and rolled it back in three days.<br>
 ## Installation
 
 ```bash
-git clone https://github.com/ai798-Lab/gpt-4o-nostalgia-skill ~/.claude/skills/gpt-4o-nostalgia
+git clone --filter=blob:none --sparse https://github.com/ai798-Lab/zhenghuo-skills ~/.claude/skills/zhenghuo
+cd ~/.claude/skills/zhenghuo
+git sparse-checkout set gpt-4o-nostalgia
+ln -sf "$(pwd)/gpt-4o-nostalgia" "$HOME/.claude/skills/gpt-4o-nostalgia"
 ```
 
 See [INSTALL.md](INSTALL.md) for details.

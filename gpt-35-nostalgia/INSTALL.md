@@ -8,14 +8,17 @@
 ## Install (Global — works in all projects)
 
 ```bash
-git clone https://github.com/ai798-Lab/gpt-35-nostalgia-skill ~/.claude/skills/gpt-35-nostalgia
+git clone --filter=blob:none --sparse https://github.com/ai798-Lab/zhenghuo-skills ~/.claude/skills/zhenghuo
+cd ~/.claude/skills/zhenghuo
+git sparse-checkout set gpt-35-nostalgia
+ln -sf "$(pwd)/gpt-35-nostalgia" "$HOME/.claude/skills/gpt-35-nostalgia"
 ```
 
 ## Install (Per-project — run in git repo root)
 
 ```bash
 mkdir -p .claude/skills
-git clone https://github.com/ai798-Lab/gpt-35-nostalgia-skill .claude/skills/gpt-35-nostalgia
+git clone https://github.com/ai798-Lab/zhenghuo-skills .claude/skills/gpt-35-nostalgia
 ```
 
 ## Verify Installation

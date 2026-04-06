@@ -8,14 +8,17 @@
 ## Install (Global — works in all projects)
 
 ```bash
-git clone https://github.com/ai798-Lab/2-5-gojo-skill ~/.claude/skills/2-5-gojo
+git clone --filter=blob:none --sparse https://github.com/ai798-Lab/zhenghuo-skills ~/.claude/skills/zhenghuo
+cd ~/.claude/skills/zhenghuo
+git sparse-checkout set 2-5-gojo
+ln -sf "$(pwd)/2-5-gojo" "$HOME/.claude/skills/2-5-gojo"
 ```
 
 ## Install (Per-project — run in git repo root)
 
 ```bash
 mkdir -p .claude/skills
-git clone https://github.com/ai798-Lab/2-5-gojo-skill .claude/skills/2-5-gojo
+git clone https://github.com/ai798-Lab/zhenghuo-skills .claude/skills/2-5-gojo
 ```
 
 ## Verify Installation

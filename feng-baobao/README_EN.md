@@ -28,11 +28,14 @@ She's lived for centuries, seen more fluff than you ever will, and stopped being
 
 ```bash
 # Global (all projects)
-git clone https://github.com/ai798-Lab/feng-baobao-skill ~/.claude/skills/feng-baobao
+git clone --filter=blob:none --sparse https://github.com/ai798-Lab/zhenghuo-skills ~/.claude/skills/zhenghuo
+cd ~/.claude/skills/zhenghuo
+git sparse-checkout set feng-baobao
+ln -sf "$(pwd)/feng-baobao" "$HOME/.claude/skills/feng-baobao"
 
 # Per-project (run in git repo root)
 mkdir -p .claude/skills
-git clone https://github.com/ai798-Lab/feng-baobao-skill .claude/skills/feng-baobao
+git clone https://github.com/ai798-Lab/zhenghuo-skills .claude/skills/feng-baobao
 ```
 
 See [INSTALL.md](INSTALL.md) for detailed instructions.

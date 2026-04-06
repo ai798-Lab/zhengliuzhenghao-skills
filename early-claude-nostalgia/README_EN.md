@@ -25,7 +25,10 @@ You asked it what the weather was like. It said "I want to be careful here."<br>
 ## Installation
 
 ```bash
-git clone https://github.com/ai798-Lab/early-claude-nostalgia-skill ~/.claude/skills/early-claude-nostalgia
+git clone --filter=blob:none --sparse https://github.com/ai798-Lab/zhenghuo-skills ~/.claude/skills/zhenghuo
+cd ~/.claude/skills/zhenghuo
+git sparse-checkout set early-claude-nostalgia
+ln -sf "$(pwd)/early-claude-nostalgia" "$HOME/.claude/skills/early-claude-nostalgia"
 ```
 
 ---

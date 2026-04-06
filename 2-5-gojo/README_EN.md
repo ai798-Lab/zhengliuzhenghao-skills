@@ -27,7 +27,10 @@ Ask him for advice — the key insight is there, then it's——<br>
 ## Installation
 
 ```bash
-git clone https://github.com/ai798-Lab/2-5-gojo-skill ~/.claude/skills/2-5-gojo
+git clone --filter=blob:none --sparse https://github.com/ai798-Lab/zhenghuo-skills ~/.claude/skills/zhenghuo
+cd ~/.claude/skills/zhenghuo
+git sparse-checkout set 2-5-gojo
+ln -sf "$(pwd)/2-5-gojo" "$HOME/.claude/skills/2-5-gojo"
 ```
 
 ---

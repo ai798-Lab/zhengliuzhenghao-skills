@@ -31,11 +31,11 @@ Sam Altman 亲自发推道歉，回滚了这个版本。<br>
 
 ```bash
 # 安装到全局（所有项目都能用）
-git clone https://github.com/ai798-Lab/gpt-4o-nostalgia-skill ~/.claude/skills/gpt-4o-nostalgia
+git clone https://github.com/ai798-Lab/zhenghuo-skills ~/.claude/skills/gpt-4o-nostalgia
 
 # 安装到当前项目（在 git 仓库根目录执行）
 mkdir -p .claude/skills
-git clone https://github.com/ai798-Lab/gpt-4o-nostalgia-skill .claude/skills/gpt-4o-nostalgia
+git clone https://github.com/ai798-Lab/zhenghuo-skills .claude/skills/gpt-4o-nostalgia
 ```
 
 ---

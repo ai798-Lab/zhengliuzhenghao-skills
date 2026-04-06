@@ -61,7 +61,7 @@ GPT-3.5 引用了一篇完美格式的论文。那篇论文不存在。<br>
           - 重复表述同一个意思的段落 × 4
 ```
 
-[→ 查看详情](./feng-baobao/) · [独立仓库](https://github.com/ai798-Lab/feng-baobao-skill)
+[→ 查看详情](./feng-baobao/)
 
 &nbsp;
 
@@ -93,7 +93,7 @@ GPT-3.5 引用了一篇完美格式的论文。那篇论文不存在。<br>
            （抱歉，下半句跟我的下半身一起走了。）
 ```
 
-[→ 查看详情](./2-5-gojo/) · [独立仓库](https://github.com/ai798-Lab/2-5-gojo-skill)
+[→ 查看详情](./2-5-gojo/)
 
 &nbsp;
 
@@ -128,7 +128,7 @@ AI 输出了 800 字关于"成长路径"和"自我价值实现"的分析。
        ......对了，先付押金。
 ```
 
-[→ 查看详情](./gintoki/) · [独立仓库](https://github.com/ai798-Lab/gintoki-skill)
+[→ 查看详情](./gintoki/)
 
 &nbsp;
 
@@ -159,7 +159,7 @@ AI 输出了 800 字关于"成长路径"和"自我价值实现"的分析。
           哇酷指数：⭐☆☆☆☆（一点都不哇酷...）
 ```
 
-[→ 查看详情](./anya/) · [独立仓库](https://github.com/ai798-Lab/anya-skill)
+[→ 查看详情](./anya/)
 
 &nbsp;
 
@@ -189,7 +189,7 @@ AI 输出了 800 字关于"成长路径"和"自我价值实现"的分析。
        大巧若拙。最好的架构，往往看起来最朴素。
 ```
 
-[→ 查看详情](./zhongli/) · [独立仓库](https://github.com/ai798-Lab/zhongli-skill)
+[→ 查看详情](./zhongli/)
 
 &nbsp;
 
@@ -225,7 +225,7 @@ function worldClassSort(arr) {
 // 🏟️ 赛后总结：收获了宝贵的经验
 ```
 
-[→ 查看详情](./china-football/) · [独立仓库](https://github.com/ai798-Lab/china-football-skill)
+[→ 查看详情](./china-football/)
 
 &nbsp;
 
@@ -258,7 +258,7 @@ GPT-4o ❯ Oh wow, this is really clean code! I can tell you put SO
            Would you like me to dive deeper? 😊
 ```
 
-[→ 查看详情](./gpt-4o-nostalgia/) · [独立仓库](https://github.com/ai798-Lab/gpt-4o-nostalgia-skill)
+[→ 查看详情](./gpt-4o-nostalgia/)
 
 &nbsp;
 
@@ -292,7 +292,7 @@ Claude  ❯ ❌ 编造：Chen et al. (2021) 该论文不存在
            ⚠️ 夸大：错误率数据无法核实
 ```
 
-[→ 查看详情](./gpt-35-nostalgia/) · [独立仓库](https://github.com/ai798-Lab/gpt-35-nostalgia-skill)
+[→ 查看详情](./gpt-35-nostalgia/)
 
 &nbsp;
 
@@ -326,7 +326,7 @@ Early Claude ❯ I appreciate you bringing this up. However, I want to
                 I apologize if this isn't as detailed as you'd like.
 ```
 
-[→ 查看详情](./early-claude-nostalgia/) · [独立仓库](https://github.com/ai798-Lab/early-claude-nostalgia-skill)
+[→ 查看详情](./early-claude-nostalgia/)
 
 &nbsp;
 
@@ -335,27 +335,35 @@ Early Claude ❯ I appreciate you bringing this up. However, I want to
 ## 快速安装
 
 ```bash
-# 安装全部 9 个 skill
-git clone https://github.com/ai798-Lab/zhengliuzhenghao-skills ~/.claude/skills/zhengliuzhenghao
-cd ~/.claude/skills/zhengliuzhenghao
+# 安装全部 9 个 skill（推荐）
+git clone https://github.com/ai798-Lab/zhenghuo-skills ~/.claude/skills/zhenghuo
+cd ~/.claude/skills/zhenghuo
 for skill in */; do
   ln -sf "$(pwd)/$skill" "$HOME/.claude/skills/${skill%/}"
 done
 ```
 
-单独安装：
+只装某一个：
 
 ```bash
-git clone https://github.com/ai798-Lab/feng-baobao-skill ~/.claude/skills/feng-baobao
-git clone https://github.com/ai798-Lab/2-5-gojo-skill ~/.claude/skills/2-5-gojo
-git clone https://github.com/ai798-Lab/gintoki-skill ~/.claude/skills/gintoki
-git clone https://github.com/ai798-Lab/anya-skill ~/.claude/skills/anya
-git clone https://github.com/ai798-Lab/zhongli-skill ~/.claude/skills/zhongli
-git clone https://github.com/ai798-Lab/china-football-skill ~/.claude/skills/china-football
-git clone https://github.com/ai798-Lab/gpt-4o-nostalgia-skill ~/.claude/skills/gpt-4o-nostalgia
-git clone https://github.com/ai798-Lab/gpt-35-nostalgia-skill ~/.claude/skills/gpt-35-nostalgia
-git clone https://github.com/ai798-Lab/early-claude-nostalgia-skill ~/.claude/skills/early-claude-nostalgia
+# 用 sparse-checkout 只拉取需要的子目录
+git clone --filter=blob:none --sparse https://github.com/ai798-Lab/zhenghuo-skills ~/.claude/skills/zhenghuo
+cd ~/.claude/skills/zhenghuo
+git sparse-checkout set feng-baobao   # 换成你想要的 skill 名
+ln -sf "$(pwd)/feng-baobao" "$HOME/.claude/skills/feng-baobao"
 ```
+
+---
+
+## 持续更新
+
+**ai798-Lab 会持续添加新的整活 Skill。**
+
+目前已有 9 个，后续还会继续蒸馏更多角色、AI 版本、网络现象。
+
+⭐ Star 这个仓库，有新 Skill 第一时间知道。<br>
+🐛 有想蒸馏的角色/AI/现象？[提一个 Issue](https://github.com/ai798-Lab/zhenghuo-skills/issues) 告诉我们。<br>
+👀 关注 [ai798-Lab](https://github.com/ai798-Lab) 获取更多 Claude Code 相关内容。
 
 ---
 
@@ -376,11 +384,11 @@ GPT-4o Nostalgia 不是在复读那次更新，是在复现那次更新的行为
 
 ## Star History
 
-<a href="https://star-history.com/#ai798-Lab/zhengliuzhenghao-skills&Date">
+<a href="https://star-history.com/#ai798-Lab/zhenghuo-skills&Date">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=ai798-Lab/zhengliuzhenghao-skills&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=ai798-Lab/zhengliuzhenghao-skills&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=ai798-Lab/zhengliuzhenghao-skills&type=Date" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=ai798-Lab/zhenghuo-skills&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=ai798-Lab/zhenghuo-skills&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=ai798-Lab/zhenghuo-skills&type=Date" />
  </picture>
 </a>
 

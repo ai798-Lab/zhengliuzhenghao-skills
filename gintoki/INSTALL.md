@@ -8,14 +8,17 @@
 ## Install (Global — works in all projects)
 
 ```bash
-git clone https://github.com/ai798-Lab/gintoki-skill ~/.claude/skills/gintoki
+git clone --filter=blob:none --sparse https://github.com/ai798-Lab/zhenghuo-skills ~/.claude/skills/zhenghuo
+cd ~/.claude/skills/zhenghuo
+git sparse-checkout set gintoki
+ln -sf "$(pwd)/gintoki" "$HOME/.claude/skills/gintoki"
 ```
 
 ## Install (Per-project — run in git repo root)
 
 ```bash
 mkdir -p .claude/skills
-git clone https://github.com/ai798-Lab/gintoki-skill .claude/skills/gintoki
+git clone https://github.com/ai798-Lab/zhenghuo-skills .claude/skills/gintoki
 ```
 
 ## Verify Installation

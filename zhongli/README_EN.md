@@ -26,7 +26,10 @@ He has watched empires rise and fall for six thousand years. New technology appe
 ## Installation
 
 ```bash
-git clone https://github.com/ai798-Lab/zhongli-skill ~/.claude/skills/zhongli
+git clone --filter=blob:none --sparse https://github.com/ai798-Lab/zhenghuo-skills ~/.claude/skills/zhenghuo
+cd ~/.claude/skills/zhenghuo
+git sparse-checkout set zhongli
+ln -sf "$(pwd)/zhongli" "$HOME/.claude/skills/zhongli"
 ```
 
 ---
