@@ -17,6 +17,7 @@ GPT-3.5 引用了一篇完美格式的论文。那篇论文不存在。<br>
 冯宝宝看完你的 PRD：废话 68%。<br>
 2.5 条悟开了无量空处。你的 bug 在里面，他懒得出来。<br>
 坂田银时喝着草莓牛奶，把你的需求文档折成了纸飞机。<br>
+李狗蛋的 QQ 空间：黄红绿蓝紫粉黑钻全开，BGM 单曲循环《灰色头像》。<br>
 
 &nbsp;
 
@@ -300,6 +301,46 @@ Claude  ❯ ❌ 编造：Chen et al. (2021) 该论文不存在
 
 ---
 
+### 💜 [QQ空间火星文](./qq-zone-martian/) — 给你的 16 岁写一封情书
+
+<img align="right" width="120" src="./qq-zone-martian/测试截图/00-封面.png">
+
+> *"莪dē青春卟媞遊戲ヽ媞葬愛dē浪漫"*
+
+触发词：`qq-zone-martian` `火星文` `葬爱` `非主流` `非主流宇宙`
+
+2010 年的 QQ 空间是我们最矫情、最真实、最不堪回首的青春。
+那个年代有自己的语言（火星文）、自己的家族（葬爱）、自己的 BGM（许嵩）、自己的角度（45° 仰望）。
+
+输入你的名字 + 一句介绍，AI 用 200+ 字符映射 + 葬爱话术体系 + 千禧年视觉，
+**给你定制一整个独属于你的"非主流宇宙"** —— 完整的 QQ 空间个人主页 HTML：
+葬爱姓名、七彩钻全开、BGM 播放器、火星文日志、9 宫格相册、留言板、班主任来骂你删火星文。
+
+包含 7 种玩法：宇宙生成器 / 葬爱身份证 / 角色扮演 / 万能翻译器 / 穿越对话 / 日志连载 / 基础转换器。
+
+```
+qq-zone-martian ❯ 你叫李狗蛋？高中生？暗恋班花？
+
+                  葬爱家族认证中... ✦
+
+                  ╭─────────────────────────╮
+                  │ 葬愛姓名: 灬殤丨狗蛋丿     │
+                  │ 所属家族: ◆殤夜葬愛★      │
+                  │ 当前 BGM: 许嵩《灰色頭像》  │
+                  │ 心情:    缃她缃到睡卟著ヽ   │
+                  │ 钻石:    🟡🔴🟢🔵🟣🩷⚫    │
+                  ╰─────────────────────────╯
+
+                  你的非主流宇宙已生成 💜
+                  → universe/sample-李狗蛋.html
+```
+
+[→ 查看详情](./qq-zone-martian/)
+
+&nbsp;
+
+---
+
 ### 🔒 [Early Claude Nostalgia](./early-claude-nostalgia/) — 过度谨慎模式
 
 <img align="right" width="80" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Claude_AI_logo.svg">
@@ -337,7 +378,7 @@ Early Claude ❯ I appreciate you bringing this up. However, I want to
 ## 快速安装
 
 ```bash
-# 安装全部 9 个 skill（推荐）
+# 安装全部 10 个 skill（推荐）
 git clone https://github.com/ai798-Lab/zhenghuo-skills ~/.claude/skills/zhenghuo
 cd ~/.claude/skills/zhenghuo
 for skill in */; do
@@ -361,7 +402,7 @@ ln -sf "$(pwd)/feng-baobao" "$HOME/.claude/skills/feng-baobao"
 
 **ai798-Lab 会持续添加新的整活 Skill。**
 
-目前已有 9 个，后续还会继续蒸馏更多角色、AI 版本、网络现象。
+目前已有 10 个，后续还会继续蒸馏更多角色、AI 版本、网络现象。
 
 ⭐ Star 这个仓库，有新 Skill 第一时间知道。<br>
 🐛 有想蒸馏的角色/AI/现象？[提一个 Issue](https://github.com/ai798-Lab/zhenghuo-skills/issues) 告诉我们。<br>
