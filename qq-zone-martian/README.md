@@ -10,7 +10,7 @@
 [![Family](https://img.shields.io/badge/葬愛傢族-VIP-FF69B4.svg)]()
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)](https://claude.ai/code)
 
-![封面](测试截图/00-封面.png)
+![李狗蛋的非主流宇宙](universe/sample-李狗蛋.png)
 
 [**這媞什麼**](#這媞什麼) · [**柒種玩法**](#-柒種玩法) · [**安裝**](#-安裝) · [**使用**](#-使用) · [**示範**](#-示範) · [**文件結構**](#-文件結構) · [**設計理念**](#-設計理念)
 
